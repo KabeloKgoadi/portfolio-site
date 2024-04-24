@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Contact</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+<body>
+    
+    <div id="content">
+        <span class="slide-menu">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+                <a href="index.html">Home</a>
+                <div class="line"></div>
+                <a href="about.html">About</a>
+                <div class="line"></div>
+                <a href="projects.html">Projects</a>
+                <div class="line"></div>
+                <a href="contact.html">Contact</a>
+
+                <div class="social-nav-icons">
+                    <a href="https://www.linkedin.com/in/kabelo-kgoadi-3596b3175"><i class="fab fa-linkedin"></i><br></a>
+                    <a href="https://github.com/KabeloKgoadi?tab=repositories"><i class="fab fa-github"></i></a>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="container-heading" align="center">
+
+            <h1><a><</a>Contact Me<a>></a></h1>
+            <div class="contact-intro">
+                <p>I'm interested in both Front-end / Back-end opportunities - especially ambitious or large projects. <br>
+                    However, if you have other requests or questions, don't hesitate to contact me.</p>
+            </div>
+           
+            <table width="50%">
+                <tr>
+                    <td align="center">
+                        <i class="fas fa-envelope"></i>
+                        <h4>ksrkgoadi@gmail.com</h4>
+                    </td>
+
+                    <td align="center">
+                        <i class="fas fa-phone"></i>
+                        <h4>+27 76 438 8494</h4>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <Div class="icon1">
+                            <a href="https://www.linkedin.com/in/kabelo-kgoadi-3596b3175"><i class="fab fa-linkedin"></i><br></a>
+                        </Div>
+                        
+                    </td>
+
+                    <td align="center">
+                        <div class="icon2">
+                            <a href="https://github.com/KabeloKgoadi?tab=repositories"><i class="fab fa-github"></i></a>
+                        </div>
+                        
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+    function openSlideMenu(){
+       document.getElementById('menu').style.width = '250px';
+       document.getElementById('content').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+       document.getElementById('menu').style.width = '0';
+       document.getElementById('content').style.marginLeft = '0';
+    }
+</script>

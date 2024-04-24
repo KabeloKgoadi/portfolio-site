@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Projects</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+<body>
+    
+    <div id="content">
+        <span class="slide-menu">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+                <a href="index.html">Home</a>
+                <div class="line"></div>
+                <a href="about.html">About</a>
+                <div class="line"></div>
+                <a href="projects.html">Projects</a>
+                <div class="line"></div>
+                <a href="contact.html">Contact</a>
+
+                <div class="social-nav-icons">
+                    <a href="https://www.linkedin.com/in/kabelo-kgoadi-3596b3175"><i class="fab fa-linkedin"></i><br></a>
+                    <a href="https://github.com/KabeloKgoadi?tab=repositories"><i class="fab fa-github"></i></a>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="container-heading" align="center">
+
+            <h1><a><</a>Projects<a>></a></h1>
+
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <div class="project-card">
+                            <img class="project-picture" src="./Assets/Images/dronoticz.png" alt="Project Image">
+                            <h6>A basic web application for drone representation, implemented using HTML and CSS.</h6>
+                            <h6></h6>
+                            <a href="https://kabelokgoadi.github.io/Dronoticz/"><button class="btnView">View</button></a>
+                        </div>
+                    </td>
+
+                    <td align="center">
+                        <div class="project-card">
+                            <img class="project-picture" src="./Assets/Images/deHouse.png" alt="Project Image">
+                           <h6>A basic web application for Dehouse Built-Enviro Experts, implemented using HTML and CSS.</h6>
+                           <h6> </h6>
+                           <a href="https://kabelokgoadi.github.io/DeHouse-Built-Enviro/"><button class="btnView">View</button></a>
+                        </div>
+                    </td>
+
+                    <td align="center">
+                        <div class="project-card">
+                            <img class="project-picture" src="./Assets/Images/AddMember.png" alt="Project Image">
+                            <h6>A React-based CRUD (Create, Read, Update, Delete) project designed for managing member data with 
+                                functionalities for adding, updating, and deleting members.</h6>
+                                <a href="https://kabelokgoadi.github.io/home/"><button class="btnView">View</button></a>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <div class="project-card">
+                            <img class="project-picture" src="./Assets/Images/school-site.png" alt="Project Image">
+                            <h6>A comprehensive software project integrating Spring Boot for the back-end and
+                                 React for the front-end, tailored for a school website.</h6>
+                            <h6> </h6>
+                                 <a><button class="btnView">View</button></a>
+                        </div>
+                    </td>
+
+                    <td align="center">
+                        <div class="project-card">
+                            <img class="project-picture" src="./Assets/Images/Questionnaire.png" alt="Project Image">
+                             <h6>A React-based CRUD (Create, Read, Update, Delete) project designed for listing questions with 
+                                functionalities for adding, updating, and deleting members.</h6>
+                                <a><button class="btnView">View</button></a>
+                        </div>
+                    </td>
+
+                    <td align="center">
+                        <div class="project-card">
+                            <img class="project-picture" src="./Assets/Images/survey.png" alt="Project Image">
+                             <h6>A PHP-based application facilitating survey participation and result visualization.</h6>
+                             <h6> </h6>
+                             <a href="https://kabelokgoadi.github.io/Survey/"><button class="btnView">View</button></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+    function openSlideMenu(){
+       document.getElementById('menu').style.width = '250px';
+       document.getElementById('content').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+       document.getElementById('menu').style.width = '0';
+       document.getElementById('content').style.marginLeft = '0';
+    }
+</script>

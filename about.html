@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | About</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+<body>
+    
+    <div id="content">
+        <span class="slide-menu">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+                <a href="index.html">Home</a>
+                <div class="line"></div>
+                <a href="about.html">About</a>
+                <div class="line"></div>
+                <a href="projects.html">Projects</a>
+                <div class="line"></div>
+                <a href="contact.html">Contact</a>
+
+                <div class="social-nav-icons">
+                    <a href="https://www.linkedin.com/in/kabelo-kgoadi-3596b3175"><i class="fab fa-linkedin"></i><br></a>
+                    <a href="https://github.com/KabeloKgoadi?tab=repositories"><i class="fab fa-github"></i></a>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="container-heading" align="center">
+
+            <h1><a><</a>About Kabelo<a>></a></h1>
+
+            <div class="about-section">
+                <p>Hello, I'm Kabelo, a passionate junior software developer with a commitment to creating efficient and innovative solutions. 
+                    With two years of hands-on experience in the dynamic field of software development, I bring a blend of technical expertise and 
+                    a genuine enthusiasm for problem-solving.</p> <br>
+                <p>My journey in software development has equipped me with the skills to analyze complex problems and implement effective solutions.
+                     I am dedicated to staying current with industry trends and emerging technologies, fostering a mindset of continuous learning.</p> <br>
+                <p>Looking forward, I am excited about learning Java and Spring Boot. I am dedicated to growing my skills and contributing 
+                    meaningfully to innovative projects that make a positive impact.</p> <br>
+                <p>Thank you for visiting my portfolio. I am eager to embark on new challenges and contribute my skills to projects that push the 
+                    boundaries of what technology can achieve. Let's build something great together!</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+    function openSlideMenu(){
+       document.getElementById('menu').style.width = '250px';
+       document.getElementById('content').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+       document.getElementById('menu').style.width = '0';
+       document.getElementById('content').style.marginLeft = '0';
+    }
+</script>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabelo Kgoadi Portfolio</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+<body>
+    
+    <div id="content">
+        <span class="slide-menu">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+                <a href="index.html">Home</a>
+                <div class="line"></div>
+                <a href="about.html">About</a>
+                <div class="line"></div>
+                <a href="projects.html">Projects</a>
+                <div class="line"></div>
+                <a href="contact.html">Contact</a>
+
+                <div class="social-nav-icons">
+                    <a href="https://www.linkedin.com/in/kabelo-kgoadi-3596b3175"><i class="fab fa-linkedin"></i><br></a>
+                    <a href="https://github.com/KabeloKgoadi?tab=repositories"><i class="fab fa-github"></i></a>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="container-heading" align="center">
+
+            <img class="myPicture" src="./CSS/kb.jpeg" alt="Picture"> 
+            <h3>Hi, I'm Kabelo<a>.</a></h3>
+
+            <p> < Software Developer > <br>
+                with a passion for Fullstack Development. </p>
+
+            <span class="header-paragraph" align="center">
+                <p>A developer who is interested in more than just code.
+                    Kabelo is currently doing a 12 months internship with Tshimologong Pricinct
+                    (Wits Incubator). Interested in doing projects that 
+                    improves and simplifies life.</p>
+            </span>
+            <br>
+            <a href="about.html"><input type = "button" id = "btnMore" value = "More About Kabelo"></input></a>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+    function openSlideMenu(){
+       document.getElementById('menu').style.width = '250px';
+       document.getElementById('content').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+       document.getElementById('menu').style.width = '0';
+       document.getElementById('content').style.marginLeft = '0';
+    }
+</script>
